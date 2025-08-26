@@ -995,3 +995,6 @@ data.raw["inserter"]["inserter"].filter_count = 0
 
 data.raw["offshore-pump"]["offshore-pump"] = nil
 data.raw["item"]["offshore-pump"].place_result = nil
+
+data.raw.pipe["pipe"].fluid_box.max_pipeline_extent = 80
+data.raw["pipe-to-ground"]["pipe-to-ground"].fluid_box.max_pipeline_extent = 80

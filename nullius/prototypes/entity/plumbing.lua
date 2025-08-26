@@ -1338,14 +1338,15 @@ data:extend({
         {flow_direction = "output", position = {0, 0.1}, direction = defines.direction.south},
         {flow_direction = "input-output", position = {0, -0.1}, direction = defines.direction.north }
       },
-	    pipe_covers = pipecoverspictures()
+	    pipe_covers = pipecoverspictures(),
+	    max_pipeline_extent = 50
     },
 
     impact_category = "metal",
     
     mode = "overflow",
     threshold = 0.25,
-    flow_rate = 200,
+    flow_rate = 50,
     
     animations = {
       north = {
@@ -1431,13 +1432,14 @@ data:extend({
         {flow_direction = "output", position = {0, 0.1}, direction = defines.direction.south},
         {flow_direction = "input-output", position = {0, -0.1}, direction = defines.direction.north }
       },
-	    pipe_covers = pipecoverspictures()
+	    pipe_covers = pipecoverspictures(),
+	    max_pipeline_extent = 50
     },
 
     impact_category = "metal",
     
     mode = "one-way",
-    flow_rate = 200,
+    flow_rate = 50,
     
     animations = {
       north = {
@@ -1523,14 +1525,15 @@ data:extend({
         {flow_direction = "output", position = {0, 0.1}, direction = defines.direction.south},
         {flow_direction = "input-output", position = {0, -0.1}, direction = defines.direction.north }
       },
-	    pipe_covers = pipecoverspictures()
+	    pipe_covers = pipecoverspictures(),
+	    max_pipeline_extent = 50
     },
 
     impact_category = "metal",
     
     mode = "top-up",
     threshold = 0.5,
-    flow_rate = 200,
+    flow_rate = 50,
     
     animations = {
       north = {
@@ -1616,14 +1619,15 @@ data:extend({
         {flow_direction = "output", position = {0, 0.1}, direction = defines.direction.south},
         {flow_direction = "input-output", position = {0, -0.1}, direction = defines.direction.north }
       },
-	    pipe_covers = pipecoverspictures()
+	    pipe_covers = pipecoverspictures(),
+	    max_pipeline_extent = 50
     },
 
     impact_category = "metal",
     
     mode = "overflow",
     threshold = 0.75,
-    flow_rate = 200,
+    flow_rate = 50,
     
     animations = {
       north = {
@@ -3270,7 +3274,8 @@ data:extend({
         { position = {0, 0},  direction = defines.direction.south },
         { position = {0, 0}, direction = defines.direction.west }
       },
-      hide_connection_info = true
+      hide_connection_info = true,
+      max_pipeline_extent = 120
     },
     impact_category = data.raw["pipe"]["pipe"].impact_category,
     working_sound = data.raw["pipe"]["pipe"].working_sound,
@@ -3308,7 +3313,8 @@ data:extend({
         { position = {0, 0},  direction = defines.direction.south },
         { position = {0, 0}, direction = defines.direction.west }
       },
-      hide_connection_info = true
+      hide_connection_info = true,
+      max_pipeline_extent = 220
     },
     impact_category = data.raw["pipe"]["pipe"].impact_category,
     working_sound = data.raw["pipe"]["pipe"].working_sound,
@@ -3386,7 +3392,8 @@ data:extend({
           direction = defines.direction.south
         }
       },
-      hide_connection_info = true
+      hide_connection_info = true,
+      max_pipeline_extent = 120,
     },
     impact_category = data.raw["pipe-to-ground"]["pipe-to-ground"].impact_category,
     pictures = undergroundpipepics("__boblogistics__/graphics/entity/pipe/copper-tungsten/"),
@@ -3426,7 +3433,8 @@ data:extend({
           direction = defines.direction.south
         }
       },
-      hide_connection_info = true
+      hide_connection_info = true,
+      max_pipeline_extent = 220,
     },
     impact_category = data.raw["pipe-to-ground"]["pipe-to-ground"].impact_category,
     pictures = data.raw["pipe-to-ground"]["bob-plastic-pipe-to-ground"].pictures,
