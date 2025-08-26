@@ -1417,6 +1417,7 @@ data:extend({
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.5, mining_time = 0.2, result = "nullius-one-way-valve"},
     max_health = 80,
+    hidden = true,
     corpse = "small-remnants",
     resistances = {
       { type = "impact", decrease = 100, percent = 90 },
@@ -1437,7 +1438,7 @@ data:extend({
     impact_category = "metal",
     
     mode = "one-way",
-    flow_rate = 200,
+    flow_rate = 50,
     
     animations = {
       north = {
@@ -1530,7 +1531,7 @@ data:extend({
     
     mode = "top-up",
     threshold = 0.5,
-    flow_rate = 200,
+    flow_rate = 50,
     
     animations = {
       north = {
@@ -1623,7 +1624,7 @@ data:extend({
     
     mode = "overflow",
     threshold = 0.75,
-    flow_rate = 200,
+    flow_rate = 50,
     
     animations = {
       north = {

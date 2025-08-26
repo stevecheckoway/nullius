@@ -875,7 +875,7 @@ data:extend({
     icon_size = 32,
     subgroup = "valves",
     order = "nullius-db",
-    place_result = "nullius-one-way-valve",
+    --place_result = "nullius-one-way-valve",
     stack_size = 200
   },
   {
