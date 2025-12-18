@@ -183,7 +183,7 @@ function init_broken()
   end
   for suffix, count in pairs(broken_data) do
     local ind = "nullius-broken-" .. suffix
-	local cur = (storage.nullius_broken_status[ind] or 0)
+	  local cur = (storage.nullius_broken_status[ind] or 0)
     storage.nullius_broken_status[ind] = (count + cur)
   end
 end
